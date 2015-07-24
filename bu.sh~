@@ -1,0 +1,12 @@
+#!/bin/bash
+LOCAL_PATH=`pwd`
+echo $LOCAL_PATH
+rm -rf output
+echo '............................delete output if output exits....................'
+#fis3 release -d ./output
+# -c to  clean compile cache
+fis3 release -c
+#npm install fis-parser-less-2.x
+#npm install fis-optimizer-png-compressor  --registry=http://npm.internal.baidu.com
+#fis3 release production -d ./output
+fis3 release testCompress -d  ./output
