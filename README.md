@@ -18,7 +18,7 @@ grunt-study
 
 # 基本使用方法
 
-## 1. 第一步，在grunt.initConfig方法中配置 uglify 的配置参数
+ 1. 第一步，在grunt.initConfig方法中配置 uglify 的配置参数
 ```
 grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'), // 读取package 的json配置
@@ -36,13 +36,13 @@ grunt.initConfig({
   });
 ```
 
-## 2. 第二步，在 grunt.initConfig 方法之后，要让grunt去加载这一个插件。光配置了，不加载上,是没法用的
+2. 第二步，在 grunt.initConfig 方法之后，要让grunt去加载这一个插件。光配置了，不加载上,是没法用的
 
 ```
     grunt.loadNpmTasks('grunt-contrib-uglify');
 ```
 
-## 2. 第二步，在grunt命令执行时，要不要立即执行uglify插件？如果要，就写上，否则不写。不写就在执行的时候根据需要加载grunt 命令后面 
+2. 第三步，在grunt命令执行时，要不要立即执行uglify插件？如果要，就写上，否则不写。不写就在执行的时候根据需要加载grunt 命令后面 
 
 
 ## jshint 检测语法的使用
